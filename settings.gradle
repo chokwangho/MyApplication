@@ -1,0 +1,1 @@
+include ':app', ':adapter', ':calc2', ':dialog', ':Image', ':webview'

@@ -1,11 +1,181 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:columnCount="5"
+    android:rowCount="9"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-</RelativeLayout>
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_span="4"
+        android:hint="inputvalue1"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        />
+
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_span="4"
+        android:hint="inputvalue2"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="1"
+        />
+
+
+    <Button
+        android:id="@+id/bt0"
+        android:text="0"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_column="0"
+        android:layout_row="2"
+        />
+    <Button
+        android:id="@+id/bt1"
+        android:text="1"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_column="1"
+        android:layout_row="2"
+        />
+    <Button
+        android:id="@+id/bt2"
+        android:text="2"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_column="2"
+        android:layout_row="2"
+        />
+    <Button
+        android:id="@+id/bt3"
+        android:text="3"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_column="3"
+        android:layout_row="2"
+        />
+    <Button
+        android:id="@+id/bt4"
+        android:text="4"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_column="4"
+        android:layout_row="2"
+        />
+
+    <Button
+        android:id="@+id/bt5"
+        android:text="5"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_column="0"
+        android:layout_row="3"
+        />
+    <Button
+        android:id="@+id/bt6"
+        android:text="6"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_column="1"
+        android:layout_row="3"
+        />
+    <Button
+        android:id="@+id/bt7"
+        android:text="7"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_column="2"
+        android:layout_row="3"
+        />
+    <Button
+        android:id="@+id/bt8"
+        android:text="8"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_column="3"
+        android:layout_row="3"
+        />
+    <Button
+        android:id="@+id/bt9"
+        android:text="9"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_column="4"
+        android:layout_row="3"
+        />
+
+    <Button
+        android:id="@+id/btadd"
+        android:layout_margin="5dp"
+        android:layout_span="4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="더하기"
+        android:layout_column="0"
+        android:layout_row="4"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        />
+
+    <Button
+        android:id="@+id/btsub"
+        android:layout_margin="5dp"
+        android:layout_span="4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_column="0"
+        android:layout_row="5"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:text="뺴기"
+        />
+
+    <Button
+        android:id="@+id/btmul"
+        android:layout_margin="5dp"
+        android:layout_span="4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_column="0"
+        android:layout_row="6"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:text="곱하기"
+        />
+
+    <Button
+        android:id="@+id/btdiv"
+        android:layout_margin="5dp"
+        android:layout_span="4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_column="0"
+        android:layout_row="7"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:text="나누기"
+        />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_span="4"
+        android:id="@+id/textresult"
+        android:textSize="30dp"
+        android:textColor="#FF0000"
+        android:text="result : "
+        android:layout_column="0"
+        android:layout_row="8"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        />
+
+</GridLayout>

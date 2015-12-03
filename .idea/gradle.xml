@@ -10,6 +10,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Image" />
+            <option value="$PROJECT_DIR$/SQLife" />
+            <option value="$PROJECT_DIR$/SQLite" />
             <option value="$PROJECT_DIR$/adapter" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/calc2" />
